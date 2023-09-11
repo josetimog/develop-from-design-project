@@ -1,0 +1,351 @@
+/********f************
+    
+    Project 1 Stylesheet
+    Name: Jose Timog
+    Date: September 9, 2023
+    Description: Project 1 CSS
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: 'Verdana', sans-serif;
+}
+
+body a:hover {
+	text-decoration: underline;
+}
+
+div#container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	box-shadow: 2px 2px #9E9E9E;
+}
+
+/* HEADER SECTION */
+header {
+	font-size: 10px;
+	height: 240px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#logo {
+	margin-bottom: -2px;
+}
+
+#login {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-links {
+	display: flex;
+	align-items: flex-end;
+}
+
+.login-links ul {
+	display: flex;
+	list-style: none;
+	margin-bottom: 2px;
+}
+
+#login-link-last {
+	border-right: none;
+}
+
+.login-links ul li a {
+	text-decoration: none;
+	color: #006699;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-right: 1px solid #006699;
+}
+
+.login-links ul li a:hover {
+	text-decoration: underline;
+}
+
+#search-bar {
+	display: flex;
+	align-items: flex-end;
+}
+
+#search-bar input {
+	margin-bottom: 7px;
+}
+
+#search {
+	display: inline;
+	width: 80px;
+	margin-right: 5px;
+}
+
+#search:focus {
+	background-color: #9cf;
+}
+
+#search-button {
+	font-size: 11px;
+	height: 20px;
+}
+
+#banner {
+	height: 100%;
+	background-image: url(images/headerBackground.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#hayden {
+	font-size: 36px;
+	letter-spacing: 5px;
+	margin: 25px;
+}
+
+#division {
+	align-self: flex-end;
+	margin-bottom: 16px;
+	margin-right: 40px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+.banner-field {
+	color: #eee;
+}
+
+/* NAVIGATION SECTION */
+nav {
+	height: 22px;
+	width: 100%;
+	background-image: linear-gradient(#99CCFF, #03699B);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+nav ul {
+	padding-top: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #eee;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-right: 1px solid #01527A;
+	border-left: 1px solid #BCDDFF;
+}
+
+nav ul li a:last-child() {
+	border-right: none;
+}
+
+#first-link {
+	border-left: none;
+}
+
+/* MAIN SECTION */
+main {
+	height: 550px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+}
+
+aside {
+	height: 100%;
+	max-width: 170px;
+}
+
+.side-links {
+	padding-bottom: 40px;
+}
+
+.side-links ul {
+	list-style-position: inside;
+}
+
+.side-links ul li:first-child {
+	list-style: none;
+}
+
+.side-links ul li {
+	font-size: 10px;
+	font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;
+	background-image: linear-gradient(#F2F1F2, #CDCCCB);
+}
+
+.side-links ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.side-links ul li a:hover {
+	text-decoration: underline;
+	color: #069;
+}
+
+.side-links ul li span {
+	position: relative;
+	margin-left: -6px;
+}
+
+#first-span {
+	margin-left: 0;
+}
+
+#nasa {
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	font-size: 10px;
+	color: #666;
+}
+
+#nasa p {
+	float: left;
+}
+
+#nasa-logo {
+	float: right;
+}
+
+section {
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.5;
+}
+
+section a {
+	text-decoration: none;
+	color: #006699;
+	font-weight: bolder;
+}
+
+#section-one {
+	padding-top: 2px;
+	border-bottom: 1px solid #ddd;
+	font-size: 10px;
+}
+
+#section-one a {
+	font-weight: 100;
+	margin-left: -5px;
+}
+
+#section-one h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+}
+
+#section-two {
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+#section-three {
+	display: flex;
+	font-size: 12px;
+}
+
+#section-three div ul {
+	list-style-position: inside;
+	list-style: none;
+	padding-left: 30px;
+}
+
+#section-three div ul li {
+	margin-bottom: 12px;
+}
+
+#rover {
+	border: 1px solid #ccc;
+	padding: 5px;
+	max-width: 257px;
+}
+
+#rover p {
+	font-size: 11px;
+}
+
+/* FOOTER SECTION*/
+footer {
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	margin-bottom: -5px;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #006699;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-right: 1px solid #000;
+}
+
+.last-link {
+	border-right: none;
+}
+
+footer p a {
+	text-decoration: none;
+	color: #006699;
+}
+
+footer ul, p {
+	margin: 2px;
+}
+
+#footer-address {
+	color: #888;
+}
